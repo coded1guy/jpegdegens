@@ -35,6 +35,7 @@ async function run() {
     )
     //@ts-ignore
     document.querySelector("#hello").innerHTML = "waiting.....";
+    //@ts-ignore
     document.querySelector("#hello").innerHTML = await hello.getter();
 }
 
