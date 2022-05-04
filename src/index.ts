@@ -34,8 +34,6 @@ async function run() {
         new ethers.providers.Web3Provider(getEth()),
     )
     //@ts-ignore
-    document.querySelector("#hello").innerHTML = "waiting.....";
-    //@ts-ignore
     document.querySelector("#hello").innerHTML = await hello.getter();
 }
 
