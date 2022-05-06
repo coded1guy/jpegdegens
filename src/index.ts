@@ -28,6 +28,7 @@ async function run() {
         throw new Error("please let us take your money");
     }
     const counter = new ethers.Contract(
+        //@ts-ignore
         process.env.CONTRACT_ADDRESS,
         [
             "function count() public",
