@@ -1,4 +1,5 @@
 import { ethers } from "ethers";
+import { visitFunctionBody } from "typescript";
 
 function getEth() {
     //@ts-ignore
@@ -26,15 +27,28 @@ async function run() {
     if(!await hasAccount() && !await requestAccount()) {
         throw new Error("please let us take your money");
     }
-    const hello = new ethers.Contract(
-        "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    const counter = new ethers.Contract(
+        process.env.CONTRACT_ADDRESS,
         [
-            "function getter() public pure returns(string memory)"
+            "function count() public",
+            "function getCounter() public view returns(uint32)"
         ],
         new ethers.providers.Web3Provider(getEth()),
     )
     //@ts-ignore
-    document.querySelector("#hello").innerHTML = await hello.getter();
+    const el = document.createElement('div');
+    async function setCounter() {
+        el.innerHTML = counter.getCounter();
+    }
+    setCounter();
+    const button = document.createElement('button');
+    button.innerText = "Increment count";
+    button.onclick = async function() {
+        await counter.count();
+        setCounter();
+    }
+    document.body.appendChild(el);
+    document.body.appendChild(button);
 }
 
 run();
