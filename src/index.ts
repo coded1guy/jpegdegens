@@ -39,7 +39,7 @@ async function run() {
     //@ts-ignore
     const el = document.createElement('div');
     async function setCounter() {
-        el.innerHTML = counter.getCounter();
+        el.innerHTML = await counter.getCounter();
     }
     setCounter();
     const button = document.createElement('button');
