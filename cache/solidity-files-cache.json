@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\emmo\\web dev stuff\\GitHub\\jpegdegens\\contracts\\Counter.sol": {
-      "lastModificationDate": 1651908684437,
-      "contentHash": "3489bd728795180a615a132a8e6bf32e",
+      "lastModificationDate": 1651914085615,
+      "contentHash": "43e792f28f88f8d9f682f82b5f0c43d0",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
