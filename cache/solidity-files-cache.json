@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Bukola Olubiyi\\Videos\\emmo\\github\\jpegdegens\\contracts\\Counter.sol": {
-      "lastModificationDate": 1651876462518,
-      "contentHash": "cbd05ca2a8cfa81155ebc1cabfe3dba5",
+    "C:\\Users\\emmo\\web dev stuff\\GitHub\\jpegdegens\\contracts\\Counter.sol": {
+      "lastModificationDate": 1651908684437,
+      "contentHash": "3489bd728795180a615a132a8e6bf32e",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -38,43 +38,8 @@
         "Counter"
       ]
     },
-    "C:\\Users\\Bukola Olubiyi\\Videos\\emmo\\github\\jpegdegens\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1651612965454,
-      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.10",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "C:\\Users\\Bukola Olubiyi\\Videos\\emmo\\github\\jpegdegens\\contracts\\helloWorld.sol": {
-      "lastModificationDate": 1651611879405,
+    "C:\\Users\\emmo\\web dev stuff\\GitHub\\jpegdegens\\contracts\\helloWorld.sol": {
+      "lastModificationDate": 1651864665662,
       "contentHash": "f3348e72ed8e1f855f7f70b5149928e6",
       "sourceName": "contracts/helloWorld.sol",
       "solcConfig": {
@@ -106,6 +71,41 @@
       ],
       "artifacts": [
         "helloWorld"
+      ]
+    },
+    "C:\\Users\\emmo\\web dev stuff\\GitHub\\jpegdegens\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1651866527193,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
       ]
     }
   }

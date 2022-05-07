@@ -8,6 +8,6 @@ contract Counter {
         console.log("Counter is now", counter);
     }
     function getCounter() public view returns(uint32) {
-        return counter;
+        return uint32(counter);
     }
 }
