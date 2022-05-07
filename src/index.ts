@@ -1,5 +1,4 @@
 import { ethers } from "ethers";
-import { visitFunctionBody } from "typescript";
 
 function getEth() {
     //@ts-ignore
@@ -32,14 +31,14 @@ async function run() {
         process.env.CONTRACT_ADDRESS,
         [
             "function count() public",
-            "function getCounter() public view returns(uint32)"
+            "function getCounter() public view returns (uint32)",
         ],
         new ethers.providers.Web3Provider(getEth()),
     )
     //@ts-ignore
     const el = document.createElement('div');
     async function setCounter() {
-        el.innerHTML = counter.getCounter();
+        el.innerHTML = await counter.getCounter();
     }
     setCounter();
     const button = document.createElement('button');
